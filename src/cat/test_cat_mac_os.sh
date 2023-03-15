@@ -1,0 +1,25 @@
+LEAK_CHECK=
+
+echo "cat Makefile > txt1.txt && $LEAK_CHECK ./s21_cat Makefile > txt2.txt && diff txt1.txt txt2.txt"
+echo "cat -b Makefile > txt1.txt && $LEAK_CHECK ./s21_cat -b Makefile > txt2.txt && diff txt1.txt txt2.txt"
+echo "cat -e Makefile > txt1.txt && $LEAK_CHECK ./s21_cat -e Makefile > txt2.txt && diff txt1.txt txt2.txt"
+echo "cat -n Makefile > txt1.txt && $LEAK_CHECK ./s21_cat -n Makefile > txt2.txt && diff txt1.txt txt2.txt"
+echo "cat -s Makefile > txt1.txt && $LEAK_CHECK ./s21_cat -s Makefile > txt2.txt && diff txt1.txt txt2.txt"
+echo "cat -t Makefile > txt1.txt && $LEAK_CHECK ./s21_cat -t Makefile > txt2.txt && diff txt1.txt txt2.txt"
+echo "cat -v Makefile > txt1.txt && $LEAK_CHECK ./s21_cat -v Makefile > txt2.txt && diff txt1.txt txt2.txt"
+
+echo "cat check.txt > txt3.txt && $LEAK_CHECK ./s21_cat check.txt > txt4.txt && diff txt3.txt txt4.txt"
+echo "cat -b check.txt  > txt3.txt && $LEAK_CHECK ./s21_cat -b check.txt  > txt4.txt && diff txt3.txt txt4.txt"
+echo "cat -e check.txt  > txt3.txt && $LEAK_CHECK ./s21_cat -e check.txt  > txt4.txt && diff txt3.txt txt4.txt"
+echo "cat -n check.txt  > txt3.txt && $LEAK_CHECK ./s21_cat -n check.txt > txt4.txt && diff txt3.txt txt4.txt"
+echo "cat -s check.txt  > txt3.txt && $LEAK_CHECK ./s21_cat -s check.txt  > txt4.txt && diff txt3.txt txt4.txt"
+echo "cat -t check.txt  > txt3.txt && $LEAK_CHECK ./s21_cat -t check.txt > txt4.txt && diff txt3.txt txt4.txt"
+echo "cat -v check.txt > txt3.txt && $LEAK_CHECK ./s21_cat -v check.txt > txt4.txt && diff txt3.txt txt4.txt"
+
+echo "cat ewe.txt > txt5.txt && $LEAK_CHECK ./s21_cat ewe.txt > txt6.txt && diff txt5.txt txt6.txt"
+echo "cat -b ewe.txt  > txt5.txt && $LEAK_CHECK ./s21_cat -b ewe.txt  > txt6.txt && diff txt5.txt txt6.txt"
+echo "cat -e ewe.txt  > txt5.txt && $LEAK_CHECK ./s21_cat -e ewe.txt  > txt6.txt && diff txt5.txt txt6.txt"
+echo "cat -n ewe.txt > txt5.txt && $LEAK_CHECK ./s21_cat -n ewe.txt > txt6.txt && diff txt5.txt txt6.txt"
+echo "cat -s ewe.txt  > txt5.txt && $LEAK_CHECK ./s21_cat -s ewe.txt  > txt6.txt && diff txt5.txt txt6.txt"
+echo "cat -t ewe.txt  > txt5.txt && $LEAK_CHECK ./s21_cat -t ewe.txt > txt6.txt && diff txt5.txt txt6.txt"
+echo "cat -v ewe.txt > txt5.txt && $LEAK_CHECK ./s21_cat -v ewe.txt> txt6.txt && diff txt5.txt txt6.txt"
